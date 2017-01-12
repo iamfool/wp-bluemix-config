@@ -18,17 +18,17 @@
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 
-$vcap = getenv("VCAP_SERVICES");
-$data = json_decode($vcap, true);
-$creds = $data['cleardb'][0]['credentials'];
-define('DB_NAME', $creds['name']);
-
+//$vcap = getenv("VCAP_SERVICES");
+//$data = json_decode($vcap, true);
+//$creds = $data['cleardb'][0]['credentials'];
+//define('DB_NAME', $creds['name']);
+define('DB_NAME', 'ibmfssdb');
 /** MySQL database username */
-define('DB_USER', $creds['username']);
-
+//define('DB_USER', $creds['username']);
+define('DB_USER', 'wordpressuser');
 /** MySQL database password */
-define('DB_PASSWORD', $creds['password']);
-
+//define('DB_PASSWORD', $creds['password']);
+define('DB_PASSWORD', 'IBMIndia@123');
 /** MySQL hostname */
 define('DB_HOST', $creds['hostname']);
 
