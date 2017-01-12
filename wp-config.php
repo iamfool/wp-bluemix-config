@@ -25,12 +25,12 @@
 define('DB_NAME', 'ibmfssdb');
 /** MySQL database username */
 //define('DB_USER', $creds['username']);
-define('DB_USER', 'wordpressuser');
+define('DB_USER', 'ibmfssdbuser');
 /** MySQL database password */
 //define('DB_PASSWORD', $creds['password']);
-define('DB_PASSWORD', 'IBMIndia@123');
+define('DB_PASSWORD', 'IBMIndia123');
 /** MySQL hostname */
-define('DB_HOST', $creds['hostname']);
+define('DB_HOST', 'ibmfss.ckckcqxhmogl.us-west-2.rds.amazonaws.com');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
